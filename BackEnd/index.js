@@ -13,7 +13,9 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-
+//! user controller
+const user = require('./controllers/user/index.js');
+app.use('/api/user', user)
 
 
 
