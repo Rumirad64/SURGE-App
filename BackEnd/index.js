@@ -38,6 +38,6 @@ connection.once("open", () => {
 
 
 
-app.listen(8000, "127.0.0.1", function () {
-    console.log('Example app listening on port 8000! http://localhost:8000');
+const server = app.listen(process.env.PORT, process.env.ADDRESS, function () {
+    console.log(`Server is running on http://${server.address().address}:${server.address().port}`);
 });
