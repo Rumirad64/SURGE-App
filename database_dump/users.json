@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "62147a0a873c801acdb8152c"
+  },
+  "fullname": "Rumira daksith edopiasdlaid",
+  "username": "Rumirad",
+  "password": "$argon2i$v=19$m=4096,t=3,p=1$lgDqC3YGlopkKMhzqIOR9Q$bjOYz0OUWaqaF3cFe4JXSyarO7IoeZ44A+/6DlIlI1A",
+  "email": "rumrad@hotmail.com",
+  "phone": "0766341279",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6216354215df0ac68c7da35d"
+  },
+  "fullname": "Rumirad",
+  "username": "adminm",
+  "password": "$argon2i$v=19$m=4096,t=3,p=1$c7cVI487FnELc+XyzWUX/w$B/PU8ZKaXJqhTXiIhlMAJxXNw0OiXnsboQMCO+GOLWY",
+  "email": "wwwwwwwwww@hotmail.lk",
+  "phone": "0766341279",
+  "__v": 0
+}]
