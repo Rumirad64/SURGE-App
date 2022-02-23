@@ -9,7 +9,7 @@ var cors = require('cors')
 //! import authenticattion / authorization middleware
 const { Authorize } = require('../../middleware/auth');
 
-const { RegisterUser, LoginUser, GetUser, UpdateUser } = require('../../services/user');
+const { RegisterUser, LoginUser, GetUser, UpdateUser } = require('../../services/user.js');
 
 // middleware that is specific to this router
 router.use((req, res, next) => {

@@ -1,5 +1,5 @@
 const UserSchema = require("../models/userSchema.js");
-const UserModel = require("../models/UserModel");
+const UserModel = require("../models/userModel.js");
 
 const jwt = require("jsonwebtoken");
 const argon2 = require('argon2');
