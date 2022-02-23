@@ -18,7 +18,7 @@ module.exports = class UserModel {         //Little of OOP :)
             throw new Error("Bad request! One or more fields are empty");
         }
         //check if password and repeat password are the same
-        if (this.password !== this.repeatPassword) {
+        if (this.password.trim() !== this.repeatPassword.trim()) {
             throw new Error("Passwords do not match");
         }
         //check if email is valid
@@ -29,7 +29,12 @@ module.exports = class UserModel {         //Little of OOP :)
         if (!validator.isMobilePhone(this.phone, 'any')) {
             throw new Error("Invalid phone number");
         }
-        
+        if(this.username.length < 4){
+            throw new Error("Username must be at least 4 characters long");
+        }
+        if(this.password.trim().length < 4){
+            throw new Error("Password must be at least 8 characters long");
+        }
     }
 
     async hashPassword() {
@@ -41,6 +46,7 @@ module.exports = class UserModel {         //Little of OOP :)
         }
     }
 
+    //? returns JSON object with user data
     GetUser() {
         return this;
     }
